@@ -5,7 +5,7 @@ export const navItems = [
     alt: "Dashboard",
   },
   {
-    href: "/outcomes",
+    href: "/course",
     icon: "/images/icons/icon-outcomes.svg",
     alt: "Outcomes",
   },
