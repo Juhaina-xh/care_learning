@@ -1,0 +1,20 @@
+import NavigationRail from "@/components/NavigationRail";
+import ProtectedRoute from "@/components/ProtectedRoute";
+
+export default function QuestionsPage() {
+  return (
+    <ProtectedRoute>
+      <main>
+        <div className="container mx-auto pt-6">
+          <div className="flex relative h-full">
+            <NavigationRail />
+            <div className="main-body flex-1 p-6">
+              <h1 className="text-2xl font-bold mb-4"> Questions</h1>
+              <p>This is the Questions & Answers section content.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </ProtectedRoute>
+  );
+}

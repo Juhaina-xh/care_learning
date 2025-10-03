@@ -1,0 +1,57 @@
+header {
+  padding: 25px 0;
+}
+
+.logo-col a {
+  color: var(--font-color);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -1.05px;
+}
+
+
+header .navbar {
+  padding-left: 35px;
+}
+
+header .navbar ul {
+  gap: 10px;
+}
+
+/*************Responsive Styles*****************/
+/***************iPhone Portrait**************/
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+}
+
+/**********************iPhone Landscape*************/
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+}
+
+/*************************iPad Portrait***************/
+@media only screen and (max-width: 985px) and (min-width: 768px) {
+}
+
+/**************iPad Landscape***************/
+@media only screen and (max-width: 1024px) and (min-width: 986px) {
+}
+/*******************************************/
+
+@media only screen and (max-width: 768px) {
+  header .level-row,
+  .navbar-sticky {
+    display: none;
+  }
+
+  .logo-col a {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .logo-col  {
+    padding-bottom: 10px;
+  }
+
+  header {
+    padding-bottom: 0;
+  }
+}

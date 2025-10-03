@@ -1,0 +1,202 @@
+/*************Responsive Styles*****************/
+/***************iPhone Portrait**************/
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+}
+
+/**********************iPhone Landscape*************/
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+}
+
+/*************************iPad Portrait***************/
+@media only screen and (max-width: 985px) and (min-width: 768px) {
+}
+
+/**************iPad Landscape***************/
+@media only screen and (max-width: 1024px) and (min-width: 986px) {
+}
+/*******************************************/
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  h3 {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  h4 {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  p,
+  a {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  body {
+    background: url("/images/bg-mobile.png") no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    max-width: 90% !important;
+  }
+
+  .main-body {
+    margin-left: 0;
+  }
+
+  .banner-sec {
+    padding: 28px;
+    flex-direction: column-reverse;
+    display: flex;
+    gap: 22px;
+  }
+
+  .btn-care {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .banner-sec .banner-contents h1 {
+    padding-top: 20px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .banner-sec .banner-contents .overview-txt,
+  .banner-sec .overview-col .view-about,
+  .banner-sec .overview-col .rating-col p,
+  .faq-sec .faq-contents p {
+    font-size: 12px !important;
+    line-height: normal !important;
+    letter-spacing: -0.24px;
+  }
+
+  .banner-sec .overview-col {
+    justify-content: space-between;
+    gap: 6px !important;
+    padding-top: 15px !important;
+  }
+
+  .banner-sec .overview-col .view-about {
+    gap: 5px !important;
+  }
+
+  .banner-sec .btn-save img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+  }
+
+  .tab-list {
+    width: 100%;
+  }
+
+  .tab-list li button {
+    font-size: 12px;
+    padding: 18px 50px;
+  }
+
+  .tab-content {
+    margin-top: 20px;
+  }
+
+  .bg-box {
+    padding: 12px 16px;
+  }
+
+  .bg-box-inner {
+    padding: 20px 14px;
+  }
+
+  .bg-box-inner p {
+    font-size: 12px !important;
+  }
+
+  .outcome-box {
+    gap: 10px;
+  }
+
+  .outcomes-row .outcome-contents p {
+    margin-left: 0;
+  }
+
+  .outcomes-row .outcome-contents .out-num {
+    font-size: 20px;
+    line-height: normal;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .outcomes-row .redirect-img img {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+  }
+
+  .modules-sec .modules-box h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .modules-sec .modules-box p {
+    font-size: 12px;
+  }
+
+  .modules-sec h3 {
+    padding-top: 10px;
+  }
+
+  .modules-sec .modules-row {
+    margin-left: 0;
+  }
+
+  .discussion-sec .profile-img {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+  }
+
+  .profile-contents .profile-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .discussion-sec .rating-col svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .discussion-sec .rating-col .rate-txt {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .discussion-sec .profile-contents p {
+    margin-top: 5px;
+  }
+
+  .faq-sec .faq-contents h3.faq-qns {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .faq-sec .faq-contents p {
+    width: 100%;
+  }
+
+  .faq-sec .faq-contents .faq-qns .icon-div {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: normal;
+  }
+}

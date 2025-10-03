@@ -1,0 +1,343 @@
+/* .loginBody {
+  min-height: 100vh;
+} */
+
+.authPage header {
+  position: relative;
+  z-index: 4;
+  padding: 20px 0;
+}
+
+.authPage {
+  height: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background: url("/images/bg-login.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+}
+
+.authPage::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 45%;
+  background: url("/images/bg-login-vector.png") no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+.auth-row {
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Left layout CSS  */
+.left-layout {
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.left-layout::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg-login-mask.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  border-radius: 30px;
+  box-shadow: -1px 0 38.9px 11px #fff inset;
+  backdrop-filter: blur(70.44999694824219px);
+}
+
+.left-layout .img-row {
+  margin-top: 30px;
+}
+
+.left-layout .img-row img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-layout .img-row .img-col {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.05) 0.37%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  box-shadow: 0 10px 17.4px 0 rgba(255, 255, 255, 0.59) inset,
+    11px 11px 48.6px 0 rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(0px);
+}
+
+.img-reg-col img {
+  height: 80px !important;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.img-reg-col {
+  padding: 15px 10px;
+  border-radius: 18px !important;
+}
+
+.img-reg-col p {
+  color: #5D6371;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  padding-top: 15px;
+  }
+
+.left-layout .layout-txt h2 {
+  color: #c897ab;
+  font-size: 39px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  padding-bottom: 15px;
+}
+
+.left-layout .layout-txt p {
+  color: #c897ab;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.authPage input {
+  background-color: #eee;
+  border: none;
+  border: 1px solid;
+}
+
+/* Form Css  */
+.form-col {
+  position: relative;
+  z-index: 999;
+}
+
+.form-col h2 {
+  color: #000;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 51px;
+  letter-spacing: -1.28px;
+  margin-bottom: 20px;
+}
+
+.form-col .auth-form input {
+  border-radius: 16px;
+  padding: 12px 25px 12px 50px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 17.4px 0 rgba(255, 255, 255, 0.59) inset,
+    11px 11px 48.6px 0 rgba(0, 0, 0, 0.08);
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.form-col .auth-form input.email-inp {
+  background: url('/images/icons/icon-email.svg') 15px no-repeat;
+  background-size: 20px;
+}
+
+.form-col .auth-form input.password-inp {
+  background: url('/images/icons/icon-password.svg') 15px no-repeat;
+  background-size: 20px;
+}
+
+.form-col .auth-form input.name-inp {
+  background: url('/images/icons/icon-name.svg') 15px no-repeat;
+  background-size: 20px 20px;
+}
+
+.form-col .auth-form input::placeholder {
+  color: #6c6880;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.forgot-link {
+  color: #0061ea;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.9px;
+  letter-spacing: -0.36px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.forgot-link-2 {
+  margin-top: 0;
+}
+
+.form-col .auth-form .btn-submit {
+  border-radius: 21px;
+  background: #000;
+  padding: 12px 20px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: var(--white-color);
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.1px;
+  letter-spacing: -0.44px;
+}
+
+.form-col .auth-form .btn-submit span img {
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  object-fit: contain;
+}
+
+.form-col .auth-form .btn-submit span {
+  /* padding: 15px; */
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+}
+
+.form-col .or-txt {
+  position: relative;
+  color: #6c6880;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15.75px;
+  letter-spacing: -0.3px;
+  margin: 25px auto;
+  z-index: 3;
+  width: fit-content;
+}
+
+.form-col .or-txt::before,
+.form-col .or-txt::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.19);
+}
+
+.form-col .or-txt::before {
+  left: -120px;
+  width: 100px;
+}
+
+.form-col .or-txt::after {
+  right: -120px;
+  width: 100px;
+}
+
+.form-col .btn-apple {
+  display: flex;
+  border-radius: 28px;
+  padding: 10px 20px;
+  border: 0.5px solid #fff;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 1px 16.4px 0 rgba(255, 255, 255, 0.64) inset,
+    11px 11px 48.6px 0 rgba(0, 0, 0, 0.05);
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+  width: fit-content;
+  margin: auto;
+}
+
+.form-col .btn-apple img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.btn-signup {
+  margin-top: 35px !important;
+}
+
+.form-col .btm-txt {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15.75px;
+  letter-spacing: -0.3px;
+  color: #6c6880;
+}
+
+.form-col .terms-link {
+  color: #2050e4;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .authPage {
+      background: url('/images/bg-login-mobile.png') no-repeat;
+      background-size: cover;
+  }
+
+  .authPage header {
+    display: none;
+  }
+
+  .authPage .left-layout {
+    display: none;
+  }
+
+  .form-col {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 985px) and (min-width: 768px) {
+  .authPage {
+      background: url('/images/bg-login-mobile.png') no-repeat;
+      background-size: cover;
+  }
+
+  .authPage header {
+    display: none;
+  }
+
+  .authPage .left-layout {
+    display: none;
+    min-height: 400px;
+  }
+
+  .form-col {
+    padding-top: 80px;
+  }
+
+
+}

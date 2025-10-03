@@ -1,0 +1,43 @@
+.navbar-sticky .back-btn-row {
+  margin-top: 25px;
+}
+
+.navbar-sticky .back-btn {
+  text-align: right;
+  width: 100%;
+  display: inline-block;
+}
+
+.navbar-sticky .back-btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-left: auto;
+}
+
+.navbar-sticky .nav-rail .nav-rail-link {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  background-color: #e3e4e8;
+  transition: 0.2s cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.navbar-sticky .nav-rail .nav-rail-link:hover,
+.navbar-sticky .nav-rail .nav-rail-link.active {
+  background-color: var(--primary-color);
+}
+
+.navbar-sticky .nav-rail .nav-rail-link:hover img,
+.navbar-sticky .nav-rail .nav-rail-link.active img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(156deg) brightness(103%) contrast(103%);
+}
+
+.navbar-sticky .nav-rail {
+  margin-top: 25px;
+}
