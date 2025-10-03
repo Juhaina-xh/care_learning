@@ -1,6 +1,6 @@
 import React from "react";
 import NavigationRail from "@/components/NavigationRail";
-import ListingPage from "@/app/outcomes/ListingPage";
+import ListingPage from "@/app/course/ListingPage";
 import ProtectedRoute from "@/components/ProtectedRoute";
 
 function CourseListing() {
